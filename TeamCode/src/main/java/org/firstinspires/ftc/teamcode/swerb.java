@@ -52,10 +52,10 @@ public class swerb extends OpMode {
         telemetry = new MultipleTelemetry(telemetry, FtcDashboard.getInstance().getTelemetry());
 
         // Initialize motors
-        frontRight = hardwareMap.get(DcMotorEx.class, "FR");
-        frontLeft = hardwareMap.get(DcMotorEx.class, "FL");
-        backRight = hardwareMap.get(DcMotorEx.class, "BR");
-        backLeft = hardwareMap.get(DcMotorEx.class, "BL");
+        frontRight = hardwareMap.get(DcMotorEx.class, "frontRight");
+        frontLeft = hardwareMap.get(DcMotorEx.class, "frontLeft");
+        backRight = hardwareMap.get(DcMotorEx.class, "backRight");
+        backLeft = hardwareMap.get(DcMotorEx.class, "backLeft");
 
         // Initialize servos
         frontRightServo = hardwareMap.get(ServoImplEx.class, "sFR");
